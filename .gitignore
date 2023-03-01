@@ -1,0 +1,26 @@
+# Compiled source #
+###################
+*.o
+*.so
+*.pyc
+
+# Logs and temporaries #
+########################
+*.log
+*~
+.coverage
+
+# Folders #
+###########
+build/
+dist/
+*.egg-info/
+__pycache__/
+.eggs/
+
+data/
+exp/
+results/
+results_AAPM/
+results_AAPM_tv/
+workdir/
