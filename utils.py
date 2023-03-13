@@ -17,8 +17,10 @@ def clear_color(x):
   x = x.detach().cpu().squeeze().numpy()
   return np.transpose(x, (1, 2, 0))
 
-def clear(x):
+def clear(x, normalize=True):
   x = x.detach().cpu().squeeze().numpy()
+  if normalize:
+    x = normalize_np(x)
   return x
 
 
