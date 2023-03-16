@@ -45,7 +45,6 @@ freq = 1
 
 if sde.lower() == 'vesde':
     from configs.ve import AAPM_256_ncsnpp_continuous as configs
-
     ckpt_filename = f"exp/ve/{config_name}/checkpoint_{ckpt_num}.pth"
     config = configs.get_config()
     config.model.num_scales = N

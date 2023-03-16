@@ -39,7 +39,7 @@ if sde.lower() == 'vesde':
   # from configs.ve import fastmri_knee_320_ncsnpp_continuous as configs
   configs = importlib.import_module(f"configs.ve.{config_name}")
   if config_name == 'fastmri_knee_320_ncsnpp_continuous':
-    ckpt_filename = f"exp/ve/{config_name}/checkpoint_{ckpt_num}.pth"
+    ckpt_filename = f"./exp/ve/{config_name}/checkpoint_{ckpt_num}.pth"
   elif config_name == 'ffhq_256_ncsnpp_continuous':
     ckpt_filename = f"exp/ve/{config_name}/checkpoint_48.pth"
   config = configs.get_config()
